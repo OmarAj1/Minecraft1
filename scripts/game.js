@@ -10,7 +10,6 @@ const pickAxe = document.querySelector("#pickAxe"); //pickAxe
 const shovel = document.querySelector("#shovel"); //shovel
 
 const startAgain = document.querySelector(".btn-start"); //btn-start
-const returnMainScreen = document.querySelector(".btn-return-main"); //btn-main-screen
 
 startAgain.addEventListener("click", reset);
 
