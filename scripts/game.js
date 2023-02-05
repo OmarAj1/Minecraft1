@@ -115,6 +115,9 @@ function fillEmptyDivs(rowStart, rowEnd, columnStart, columnEnd) {
             newDivs.style.gridColumnStart = column;
             mainGame.appendChild(newDivs);
             emptyDive = newDivs;
+            newDivs.addEventListener("click", function(e) {
+                setDiv(e);
+            });
         }
     }
 }
@@ -130,7 +133,9 @@ function createMap(type, rowStart, rowEnd, columnStart, columnEnd) {
             materialElement.style.gridColumnStart = column;
             materialElement.classList.add(`${type}`);
             mainGame.appendChild(materialElement);
-
+            materialElement.addEventListener("click", function(e) {
+                setDiv(e);
+            });
         }
     }
 }
@@ -200,6 +205,7 @@ function reset() {
     grass.textContent = grassCollection;
     dirt.textContent = dirtCollection;
     fillEmptyDivs(1, 22, 1, 22);
+
 
     createMap("dirt", 16, 21, 1, 21);
     createMap("grass", 15, 15, 1, 21);
