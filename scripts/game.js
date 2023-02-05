@@ -115,16 +115,13 @@ function fillEmptyDivs(rowStart, rowEnd, columnStart, columnEnd) {
             newDivs.style.gridColumnStart = column;
             mainGame.appendChild(newDivs);
             emptyDive = newDivs;
-            newDivs.addEventListener("click", function(e) {
-                setDiv(e);
-            });
         }
     }
 }
 
 fillEmptyDivs(1, 22, 1, 22);
 
-// function to creat map world
+// function to create map world
 function createMap(type, rowStart, rowEnd, columnStart, columnEnd) {
     for (let row = rowStart; row <= rowEnd; row++) {
         for (let column = columnStart; column <= columnEnd; ++column) {
@@ -133,9 +130,7 @@ function createMap(type, rowStart, rowEnd, columnStart, columnEnd) {
             materialElement.style.gridColumnStart = column;
             materialElement.classList.add(`${type}`);
             mainGame.appendChild(materialElement);
-            materialElement.addEventListener("click", function(e) {
-                setDiv(e);
-            });
+
         }
     }
 }
@@ -208,9 +203,10 @@ function reset() {
 
     createMap("dirt", 16, 21, 1, 21);
     createMap("grass", 15, 15, 1, 21);
-    createMap("Stone", 12, 14, 18, 18);
+    createMap("Stone", 11, 14, 1, 1);
+    createMap("Stone", 12, 14, 2, 2);
     createMap("Stone", 13, 14, 3, 3);
-    createMap("Stone", 14, 14, 11, 11);
+    createMap("Stone", 14, 14, 4, 4);
     createMap("wood", 12, 14, 6, 6);
     createMap("wood", 12, 14, 15, 15);
     createMap("leaves", 8, 11, 5, 7);
