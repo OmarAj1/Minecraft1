@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    /* background: #83c8e4; */
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background: #383d48;
+}
+
+.main-game {
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+    background: #83c8e4;
+    cursor: pointer;
+}
+
+.side-bar {
+    border: 3px solid #3b3838;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 1rem;
+    background-color: #3b3838;
+}
+
+.trash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.tool-box {
+    border: 1px dotted white;
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-size: 0.9rem;
+    padding-left: 0.7rem;
+}
+
+.tools-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.trash-amount {
+    border: 1px solid white;
+    text-align: center;
+    width: 3.3rem;
+    height: 3.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+}
+
+.start-again {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.return-main-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    padding: 1rem;
+    font-weight: 800;
+    font-size: 0.9rem;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-start {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.all-btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+
+/* tools */
+
+.pickAxe {
+    background: url("/assets/pickAxe.png") no-repeat center center/cover;
+}
+
+.shovel {
+    background: url("/assets/shovel.png") no-repeat center center/cover;
+}
+
+.axe {
+    background: url("/assets/axes.png") no-repeat center center/cover;
+}
+
+
+/* inventory materials */
+
+.leaves,
+#leaves {
+    background: url("/assets/leaves.webp") no-repeat center center/cover;
+}
+
+.wood,
+#wood {
+    background: url("/assets/wood.webp") no-repeat center center/cover;
+}
+
+.grass,
+#grass {
+    background: url("/assets/Grass_Block.webp") no-repeat center center/cover;
+}
+
+.dirt,
+#dirt {
+    background: url("/assets/Dirt_.webp") no-repeat center center/cover;
+}
+
+.Stone,
+#Stone {
+    background: url("/assets/Gravel_.webp") no-repeat center center/cover;
+}
