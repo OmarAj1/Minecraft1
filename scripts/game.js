@@ -11,7 +11,6 @@ const shovel = document.querySelector("#shovel"); //shovel
 
 const startAgain = document.querySelector(".btn-start"); //btn-start
 
-startAgain.addEventListener("click", reset);
 
 
 let dirtCollection = 0;
@@ -120,6 +119,7 @@ function fillEmptyDivs(rowStart, rowEnd, columnStart, columnEnd) {
         }
     }
 }
+startAgain.addEventListener("click", reset);
 
 fillEmptyDivs(1, 22, 1, 22);
 
@@ -196,6 +196,7 @@ leaves.addEventListener("click", function() {
 
 
 function reset() {
+    currenTool = '';
     dirtCollection = 0;
     grassCollection = 0;
     StoneCollection = 0;
@@ -206,8 +207,12 @@ function reset() {
     Stone.textContent = StoneCollection;
     grass.textContent = grassCollection;
     dirt.textContent = dirtCollection;
-    fillEmptyDivs(1, 22, 1, 22);
+    mainGame.innerHTML = "";
 
+    document.querySelector(".flex-box").style = `cursor: pointer, auto`;
+
+
+    fillEmptyDivs(1, 22, 1, 22);
 
     createMap("dirt", 16, 21, 1, 21);
     createMap("grass", 15, 15, 1, 21);
@@ -219,5 +224,13 @@ function reset() {
     createMap("wood", 12, 14, 15, 15);
     createMap("leaves", 8, 11, 5, 7);
     createMap("leaves", 8, 11, 14, 16);
+
+
+
+}
+
+startAgain.addEventListener("click", restart);
+
+function restart() {
 
 }
