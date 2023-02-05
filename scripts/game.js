@@ -3,7 +3,7 @@ const dirt = document.querySelector("#dirt"); //inventory
 const grass = document.querySelector("#grass"); //inventory
 const Stone = document.querySelector("#Stone"); //inventory
 const wood = document.querySelector("#wood"); //inventory
-const leaves = document.querySelector("#leaves"); //trash
+const leaves = document.querySelector("#leaves"); //inventory
 
 const axe = document.querySelector("#axe"); //axe
 const pickAxe = document.querySelector("#pickAxe"); //pickAxe
@@ -12,7 +12,6 @@ const shovel = document.querySelector("#shovel"); //shovel
 const startAgain = document.querySelector(".btn-start"); //btn-start
 
 startAgain.addEventListener("click", reset);
-
 
 
 let dirtCollection = 0;
@@ -158,17 +157,20 @@ let currenTool = "";
 
 axe.addEventListener("click", function() {
     currenTool = "Axe";
-    console.log(currenTool);
+    document.querySelector(".flex-box").style = `cursor: url("/assets/cursor/axes.png"), auto`;
+
 });
 
 pickAxe.addEventListener("click", function() {
     currenTool = "Pickaxe";
-    console.log(currenTool);
+    document.querySelector(".flex-box").style = `cursor: url("/assets/cursor/pickaxe.png"), auto`;
+
 });
 
 shovel.addEventListener("click", function() {
     currenTool = "Shovel";
-    console.log(currenTool);
+    document.querySelector(".flex-box").style = `cursor: url("/assets/cursor/shovel.png"), auto`;
+
 });
 
 dirt.addEventListener("click", function() {

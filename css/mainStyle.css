@@ -32,7 +32,6 @@ body {
     grid-template-columns: repeat(21, 1fr);
     grid-template-rows: repeat(21, 1fr);
     background: #83c8e4;
-    cursor: pointer;
 }
 
 .side-bar {
@@ -74,7 +73,6 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-weight: 800;
-    cursor: pointer;
 }
 
 .trash-amount {
@@ -87,7 +85,6 @@ body {
     align-items: center;
     font-weight: 800;
     color: white;
-    cursor: pointer;
 }
 
 .start-again {
@@ -117,7 +114,6 @@ a {
     background: transparent;
     border: 1px solid white;
     color: white;
-    cursor: pointer;
 }
 
 .btn-start {
